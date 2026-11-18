@@ -1,0 +1,42 @@
+[
+  {
+    "system_id": "llama3.1-8b__zero_shot",
+    "provider": "openai_compat",
+    "model_name": "meta-llama-3.1-8b-instruct",
+    "strategy": "zero_shot",
+    "base_url": "http://127.0.0.1:1234/v1",
+    "input_cost_per_1m_usd": 0.0,
+    "output_cost_per_1m_usd": 0.0,
+    "temperature": 0.0
+  },
+  {
+    "system_id": "llama3.1-8b__structured",
+    "provider": "openai_compat",
+    "model_name": "meta-llama-3.1-8b-instruct",
+    "strategy": "structured",
+    "base_url": "http://127.0.0.1:1234/v1",
+    "input_cost_per_1m_usd": 0.0,
+    "output_cost_per_1m_usd": 0.0,
+    "temperature": 0.0
+  },
+  {
+    "system_id": "dolphin3-8b__structured",
+    "provider": "openai_compat",
+    "model_name": "dolphin3.0-llama3.1-8b",
+    "strategy": "structured",
+    "base_url": "http://127.0.0.1:1234/v1",
+    "input_cost_per_1m_usd": 0.0,
+    "output_cost_per_1m_usd": 0.0,
+    "temperature": 0.0
+  },
+  {
+    "system_id": "qwen3-vl-4b__structured",
+    "provider": "openai_compat",
+    "model_name": "qwen/qwen3-vl-4b",
+    "strategy": "structured",
+    "base_url": "http://127.0.0.1:1234/v1",
+    "input_cost_per_1m_usd": 0.0,
+    "output_cost_per_1m_usd": 0.0,
+    "temperature": 0.0
+  }
+]

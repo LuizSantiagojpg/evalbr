@@ -1,0 +1,73 @@
+{
+  "n_samples": 20,
+  "systems": [
+    {
+      "system_id": "llama3.1-8b__zero_shot",
+      "n_samples": 20,
+      "json_valid_rate": 0.7,
+      "retry_rate": 1.0,
+      "hallucination_rate": 0.35,
+      "latency_p50_ms": 3310.2,
+      "latency_p95_ms": 6243.8
+    },
+    {
+      "system_id": "llama3.1-8b__structured",
+      "n_samples": 20,
+      "json_valid_rate": 1.0,
+      "retry_rate": 0.0,
+      "hallucination_rate": 0.0,
+      "latency_p50_ms": 1319.17,
+      "latency_p95_ms": 1586.86
+    },
+    {
+      "system_id": "dolphin3-8b__structured",
+      "n_samples": 20,
+      "json_valid_rate": 1.0,
+      "retry_rate": 0.0,
+      "hallucination_rate": 0.25,
+      "latency_p50_ms": 1337.24,
+      "latency_p95_ms": 3221.28
+    },
+    {
+      "system_id": "qwen3-vl-4b__structured",
+      "n_samples": 20,
+      "json_valid_rate": 1.0,
+      "retry_rate": 0.0,
+      "hallucination_rate": 0.0,
+      "latency_p50_ms": 886.19,
+      "latency_p95_ms": 1647.58
+    }
+  ],
+  "inter_model_kappa": [
+    {
+      "system_a": "llama3.1-8b__zero_shot",
+      "system_b": "llama3.1-8b__structured",
+      "cohens_kappa": 0.5848
+    },
+    {
+      "system_a": "llama3.1-8b__zero_shot",
+      "system_b": "dolphin3-8b__structured",
+      "cohens_kappa": 0.5156
+    },
+    {
+      "system_a": "llama3.1-8b__zero_shot",
+      "system_b": "qwen3-vl-4b__structured",
+      "cohens_kappa": 0.5122
+    },
+    {
+      "system_a": "llama3.1-8b__structured",
+      "system_b": "dolphin3-8b__structured",
+      "cohens_kappa": 0.9153
+    },
+    {
+      "system_a": "llama3.1-8b__structured",
+      "system_b": "qwen3-vl-4b__structured",
+      "cohens_kappa": 0.9142
+    },
+    {
+      "system_a": "dolphin3-8b__structured",
+      "system_b": "qwen3-vl-4b__structured",
+      "cohens_kappa": 0.9138
+    }
+  ]
+}

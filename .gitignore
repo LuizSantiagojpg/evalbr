@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+.venv/
+*.sqlite
+reports/*.sqlite
+reports_real/*.sqlite
+reports_olist/*.sqlite
+data/olist_order_reviews_dataset.csv
+data/*.zip
+.env
